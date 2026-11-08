@@ -16,4 +16,3 @@ class DataManager:
         response = requests.get(url=SHEETY_ENDPOINT, headers=HEADERS)
         response.raise_for_status()
         self.arrival_info = response.json()['flight']
-        print(self.arrival_info)

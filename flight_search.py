@@ -29,4 +29,3 @@ class FlightSearch:
             self.search_data = response.json()
 
             city.cheapest_price = self.search_data["price_insights"]["lowest_price"]
-            print(city.cheapest_price)
